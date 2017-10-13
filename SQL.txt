@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `tbl_daftar_mahasiswa` (
+  `id_daftar` int(10) NOT NULL auto_increment,
+  `tanggal_daftar` date default NULL,
+  `nama_pendaftar` varchar(75) default NULL,
+  `jns_kelamin` varchar(15) default NULL,
+  `status` varchar(20) default NULL,
+  `lulusan_sekolah` varchar(20) default NULL,
+  `tahun_ajaran` int(6) default NULL,
+  `pekerjaan` varchar(125) default NULL,
+  `alamat` varchar(150) default NULL,
+  `kelurahan` varchar(75) default NULL,
+  `kecamatan` varchar(75) default NULL,
+  `kota` varchar(75) default NULL,
+  `provinsi` varchar(75) default NULL,
+  `telp` varchar(20) NOT NULL default '',
+  PRIMARY KEY  (`id_daftar`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
